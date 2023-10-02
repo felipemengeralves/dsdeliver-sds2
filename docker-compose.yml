@@ -1,0 +1,10 @@
+version: "3"
+services:
+  db_dsdeliver:
+    container_name: db_dsdeliver
+    image: postgres:13-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: 1234567
+      POSTGRES_DB: dsdeliver
